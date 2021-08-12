@@ -1,0 +1,128 @@
+@import "../fonts/stylesheet.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Gilroy";
+}
+
+.header__nav {
+    height: 80px;
+    display: flex;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__info {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.header__list {
+    display: flex;
+}
+
+.header__link {
+    font-weight: 700;
+    font-size: 13px;
+    color: #565656;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+.header__sign {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    border-right: black 1px solid;
+    border-left: black 1px solid;
+    height: 100%;
+    align-items: center;
+}
+
+.header__lang {
+    margin-left: 30px;
+    width: 65px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #f9f9f9;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    border-radius: 14px;
+}
+.header__ru {
+    width: 35px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.header__en {
+    width: 35px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.span {
+    position: absolute;
+    width: 35px;
+    height: 100%;
+    background: #4eaae0;
+    border-radius: 14px;
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 2.275);
+    transform: translate(-50%);
+}
+
+#ru {
+    position: absolute;
+    top: -50%;
+    opacity: 0;
+}
+#en {
+    position: absolute;
+    bottom: -50%;
+    opacity: 0;
+}
+
+#ru:checked ~ .span {
+    transform: translate(-50%);
+}
+#en:checked ~ .span {
+    transform: translate(50%);
+}
+
+
+
