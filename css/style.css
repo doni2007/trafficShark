@@ -123,6 +123,33 @@ a {
 #en:checked ~ .span {
     transform: translate(50%);
 }
+/* header finished */
+/* main starts */
 
-
-
+.web{
+    height: 90vh;
+    position: relative;
+}
+.web__bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+.web__content{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.web__title{
+   font-size: 60px;
+   color: white;
+   text-transform: uppercase;
+}
+.web__text{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
